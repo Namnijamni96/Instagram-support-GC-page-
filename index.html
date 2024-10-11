@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Support GC</title>
+  <style>
+    /* General reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Background style */
+    body {
+      background-image: url('https://media3.giphy.com/media/1pmatQ3LcP5XFYxSWF/giphy.gif?cid=6c09b952ny3n27ipi04kvchj47uai43209bj2mohnj8mex0d&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g');
+      background-size: cover;
+      background-repeat: repeat;
+      font-family: Arial, sans-serif;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    /* Fade-in animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    /* Main container */
+    .container {
+      text-align: center;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 40px;
+      border-radius: 15px;
+      width: 90%;
+      max-width: 600px;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+      transform: translateY(-30px);
+      animation: slideUp 1s ease-in-out forwards;
+      opacity: 0;
+    }
+
+    /* Slide-up animation */
+    @keyframes slideUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Header */
+    h1 {
+      font-size: 2.8em;
+      margin-bottom: 30px;
+      color: #00acee;
+      text-shadow: 0 0 10px #00acee, 0 0 20px #00acee, 0 0 30px #00acee;
+      animation: neonGlow 1.5s infinite alternate;
+    }
+
+    /* Neon glow animation */
+    @keyframes neonGlow {
+      0% { text-shadow: 0 0 5px #00acee, 0 0 10px #00acee, 0 0 20px #00acee; }
+      100% { text-shadow: 0 0 20px #00acee, 0 0 30px #00acee, 0 0 40px #00acee; }
+    }
+
+    /* Channel buttons */
+    .channels {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .channel-button {
+      padding: 15px;
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #fff;
+      text-transform: uppercase;
+      text-decoration: none;
+      position: relative;
+      overflow: hidden;
+      border-radius: 50px;
+      background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888, #9b1dbf);
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .channel-button::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 300%;
+      height: 300%;
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      transition: transform 0.5s ease;
+      transform: translate(-50%, -50%) scale(0);
+    }
+
+    .channel-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.5);
+    }
+
+    .channel-button:hover::before {
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    /* About Us button */
+    .about-button {
+      padding: 15px;
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #fff;
+      text-transform: uppercase;
+      text-decoration: none;
+      position: relative;
+      overflow: hidden;
+      border-radius: 50px;
+      background: linear-gradient(135deg, #00ff99, #00b3ff);
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .about-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 8px 20px rgba(0, 255, 255, 0.5);
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: #ddd;
+      opacity: 0;
+      animation: textFade 2s ease-in-out forwards;
+      animation-delay: 1s;
+    }
+
+    /* Text fade-in animation */
+    @keyframes textFade {
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Instagram Support GC</h1>
+    <div class="channels">
+      <a href="https://ig.me/j/Abau3aehCAaVeK_X/" class="channel-button">channel 1</a>
+      <a href="https://ig.me/j/AbZnbzsj29YdZBz7/" class="channel-button">Channel 2</a>
+      <a href="https://ig.me/j/AbbaVasGLZuTcpmx/" class="channel-button">Channel 3</a>
+      <a href="https://namnijamni96.github.io/About-us-Instagram-support-GC/" class="about-button">About Us</a>
+    </div>
+    <footer>&copy; 2024 All rights reserved. This site is created for artist support.</footer>
+  </div>
+</body>
+</html>
